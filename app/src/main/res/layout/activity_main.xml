@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animate pop in"
+        android:inputType="textNoSuggestions"
+    app:animationType="popIn"
+    app:animateCursor="true"
+        android:id="@+id/popIn"
+    app:animateTextClear="true" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animate FromBottom"
+        android:layout_below="@id/popIn"
+
+        android:inputType="textNoSuggestions"
+        app:animationType="fromBottom"
+        android:id="@+id/fromBottom"
+        app:animateCursor="true"
+        app:animateTextClear="true" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animate fromRight"
+        android:layout_below="@id/fromBottom"
+        android:id="@+id/fromRight"
+        android:inputType="textNoSuggestions"
+        app:animationType="fromRight"
+        app:animateCursor="true"
+        app:animateTextClear="true" />
+
+    <com.alimuzaffar.lib.widgets.AnimatedEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Animate fromMiddle"
+        android:inputType="textNoSuggestions"
+        android:layout_below="@id/fromRight"
+        app:animationType="fromMiddle"
+        android:id="@+id/fromMiddle"
+        app:animateCursor="true"
+        app:animateTextClear="true" />
+
+
+
+</RelativeLayout>
